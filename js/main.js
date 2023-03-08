@@ -44,3 +44,17 @@
     
 })(jQuery);
 
+
+$(".overlay-2").fadeOut('fast');
+$(".form-container-2").fadeOut('fast');
+$(document).ready(function() {
+$(".course-card").click(function() {
+  $(".overlay-2").fadeIn();
+  $(".form-container-2").fadeIn();
+});
+
+$(".overlay-2, .form-container-2 button[type='submit']").click(function() {
+  $(".overlay-2").fadeOut();
+  $(".form-container-2").fadeOut();
+});
+});
