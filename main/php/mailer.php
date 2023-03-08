@@ -1,18 +1,24 @@
-
-
-
 <?php
+
+class mailer{
 /**
  * This example shows making an SMTP connection without using authentication.
  */
-// path to phpmailer classes
-require 'src/Exception.php';
-require 'src/PHPMailer.php';
-require 'src/SMTP.php';
 
 //Import the PHPMailer class into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+ 
+public $name;
+public $email;
+public $subject;
+public $body;
+function send($name, $email, $subject, $body){
+
+    // path to phpmailer classes
+require 'src/Exception.php';
+require 'src/PHPMailer.php';
+require 'src/SMTP.php';
 
 //SMTP needs accurate times, and the PHP time zone MUST be set
 //This should be done in your php.ini, but this is how to do it if you don't have access to that
@@ -34,16 +40,15 @@ $mail->Port = 25;
 //We don't need to set this as it's the default value
 //$mail->SMTPAuth = false;
 //Set who the message is to be sent from
-$mail->setFrom('from@example.com', 'First Last');
+$mail->setFrom($email, $name);
 //Set an alternative reply-to address
-$mail->addReplyTo('replyto@example.com', 'First Last');
+$mail->addReplyTo('info@wigsedu.com', 'Wigsedu');
 //Set who the message is to be sent to
-$mail->addAddress('whoto@example.com', 'John Doe');
+$mail->addAddress('info@wigsedu.com', 'Wigsedu');
 //Set the subject line
-$mail->Subject = 'PHPMailer SMTP without auth test';
-
+$mail->Subject = $subject;
 //Replace the plain text body with one created manually
-$mail->AltBody = 'This is a plain-text message body';
+$mail->AltBody = $body;
 //Attach an image file
 //send the message, check for errors
 if (!$mail->send()) {
@@ -51,3 +56,7 @@ if (!$mail->send()) {
 } else {
     echo 'Message sent!';
 }
+
+}
+}
+?>
