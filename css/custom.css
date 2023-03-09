@@ -18,6 +18,11 @@
     min-height: 25rem;
 }
 
+.full-img-6{
+    width: 100%;
+    height: 20rem;
+}
+
 .gallary-image-holder{
     display: grid;
     gap: 1rem;
@@ -139,3 +144,10 @@
     -o-border-radius: 5px;
 }
   
+
+
+@media (max-width: 768px) {
+ .hide-mobile{
+    display: none !important;
+ }
+  }
