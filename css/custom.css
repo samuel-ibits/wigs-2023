@@ -154,7 +154,9 @@
   
 .small-image{
   height: 10rem;
+  width: 100%;
 }
+
 
 
 @media (max-width: 768px) {
