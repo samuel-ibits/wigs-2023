@@ -143,7 +143,20 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+.logo{
+  width: 4rem;
+}
+
+.logo img{
+  width: 100%;
+}
   
+.small-image{
+  height: 10rem;
+  width: 100%;
+}
+
 
 
 @media (max-width: 768px) {
