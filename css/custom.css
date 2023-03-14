@@ -152,6 +152,9 @@
   width: 100%;
 }
   
+.small-image{
+  height: 10rem;
+}
 
 
 @media (max-width: 768px) {
