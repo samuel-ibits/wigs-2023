@@ -143,6 +143,14 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+.logo{
+  width: 4rem;
+}
+
+.logo img{
+  width: 100%;
+}
   
 
 
