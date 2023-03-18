@@ -18,6 +18,11 @@
     min-height: 25rem;
 }
 
+.full-width-7{
+  max-height: 17rem;
+  width: 100%;
+}
+
 .full-img-6{
     width: 100%;
     height: 20rem;
@@ -143,7 +148,20 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+.logo{
+  width: 4rem;
+}
+
+.logo img{
+  width: 100%;
+}
   
+.small-image{
+  height: 10rem;
+  width: 100%;
+}
+
 
 
 @media (max-width: 768px) {
