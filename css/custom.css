@@ -28,6 +28,11 @@
     height: 20rem;
 }
 
+.small-image{
+  width: 90px !important;
+  height: 90px !important;
+}
+
 .gallary-image-holder{
     display: grid;
     gap: 1rem;
