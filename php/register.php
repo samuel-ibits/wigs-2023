@@ -5,9 +5,11 @@
  $email=$_POST["email"];
  $phone=$_POST["phone"];
  $address=$_POST["address"];
+ $note=$_POST["note"];
+ $other=$_POST["other"];
 
- $subject="Registration";
- $message= ` Name: $name, Email: $email, Phone: $phone, Address: $address `;
+ $subject="Quote";
+ $message= ` Name: $name, Email: $email, Phone: $phone, Address: $address ,Note: $note,  Other :  $other`;
  $null="";
 
 $mailer= new mailer();
